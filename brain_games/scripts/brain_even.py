@@ -11,9 +11,12 @@ def welcome_user():
 
 
 def brain_even():
+
     count_ = 0
+    print('Answer "yes" if the number is even, otherwise answer "no".')
+
     while count_ < 3 :
-        print('Answer "yes" if the number is even, otherwise answer "no".')
+
         number = randint(1,99)
 
         if number % 2 == 0:

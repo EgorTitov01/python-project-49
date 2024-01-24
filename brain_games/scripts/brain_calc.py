@@ -2,11 +2,14 @@
 
 from random import randint
 import prompt
-from brain_games.games.brain_even_logic import brain_even
+from brain_games.games.brain_calc_logic import brain_calc
 from brain_games.games_logic import start_game
 
+
+
+
 def main():
-    start_game(brain_even)
+    start_game(brain_calc)
 
 if __name__ == '__main__':
-    main()
+        main()

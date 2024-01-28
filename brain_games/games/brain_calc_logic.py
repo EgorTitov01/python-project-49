@@ -12,7 +12,7 @@ def brain_calc():
 
     right_answer = str(eval(f'{str(number1)}'
                             f'{operators[oper]}{str(number2)}'))
-    question = (f'Question: {str(number1)}'
-                f'{operators[oper]}{str(number2)}\nYour answer: ')
+    question = (f'Question: {str(number1)} '
+                f'{operators[oper]} {str(number2)}\nYour answer: ')
 
     return question, right_answer

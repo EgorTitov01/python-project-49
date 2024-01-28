@@ -1,5 +1,6 @@
 import prompt
 
+
 def start_game(game):
 
     print('Welcome to the Brain Games!')
@@ -22,4 +23,5 @@ def start_game(game):
     if count == 3:
         print(f'Congratulations, {name}!')
     else:
-        print(f"{answer} is wrong answer ;(. Correct answer was {right_answer}. Let's try again, {name}")
+        print(f"{answer} is wrong answer ;(. Correct answer was"
+              f" {right_answer}. Let's try again, {name}")

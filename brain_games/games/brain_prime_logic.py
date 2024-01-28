@@ -8,7 +8,7 @@ def brain_prime():
     right_answer = 'yes'
     question = f'Question: {number}\nYour answer: '
 
-    for i in range(2, round(number ** (1/2)) + 1):
+    for i in range(2, round(number ** (1 / 2)) + 1):
         if number % i == 0:
             right_answer = 'no'
             break

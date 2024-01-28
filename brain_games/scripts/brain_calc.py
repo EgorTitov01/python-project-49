@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
-from random import randint
-import prompt
+
 from brain_games.games.brain_calc_logic import brain_calc
 from brain_games.games_logic import start_game
 

@@ -3,8 +3,8 @@ import prompt
 
 def start_game(game):
 
-    print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name?')
+    print('Welcome to the Brain Games!\nMay I have your name?')
+    name = prompt.string('')
     print(f'Hello, {name}!')
     count = 0
 
@@ -17,7 +17,6 @@ def start_game(game):
             print('Correct!')
             count += 1
         else:
-            count = 4
             break
 
     if count == 3:

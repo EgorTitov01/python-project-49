@@ -1,12 +1,14 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+description = "5 mathematical games to play"
+authors = ["Egor Titov <titov.egor1001@gmail.com>"]
 readme = "README.md"
 packages = [
   { include = "brain_games" },
 ]
+classifiers = ["Topic :: Games/Entertainment :: Arcade"]
+repository = "https://github.com/EgorTitov01/python-project-49"
 
 [tool.poetry.dependencies]
 python = "^3.10"

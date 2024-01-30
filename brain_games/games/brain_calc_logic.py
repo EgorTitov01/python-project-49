@@ -3,7 +3,7 @@ from random import randint
 
 def brain_calc():
 
-    print('What is the result of the expression?\n')
+    print('What is the result of the expression?')
 
     operators = ['+', '-', '*']
     oper = randint(0, 2)

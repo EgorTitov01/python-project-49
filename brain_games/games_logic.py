@@ -3,23 +3,23 @@ import prompt
 
 def start_game(game):
 
-    print('Welcome to the Brain Games!\nMay I have your name?')
-    name = prompt.string('')
+    print('Welcome to the Brain Games!')
+    name = prompt.string('May I have your name?')
     print(f'Hello, {name}!')
-    count = 0
+    all_questions = 3
 
-    while count < 3:
+    for i in range(1, all_questions + 1):
 
         question, right_answer = game()
         answer = prompt.string(question)
 
         if right_answer == str(answer):
             print('Correct!')
-            count += 1
         else:
+            i = all_questions - 1
             break
 
-    if count == 3:
+    if i == all_questions:
         print(f'Congratulations, {name}!')
     else:
         print(f"{answer} is wrong answer ;(. Correct answer was"

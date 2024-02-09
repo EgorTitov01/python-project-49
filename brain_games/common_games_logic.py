@@ -4,22 +4,26 @@ import prompt
 def start_game(game):
 
     print('Welcome to the Brain Games!')
-    name = prompt.string('May I have your name?')
-    print(f'Hello, {name}!')
-    number_of_questions = 3
+    user_name = prompt.string('May I have your name?\n')
+    print(f'Hello, {user_name}!')
+    print(game.TASK)
 
-    for i in range(number_of_questions):
+    questions_count = 3
 
-        question, right_answer = game()
-        answer = prompt.string(question)
+    for _ in range(questions_count):
 
-        if right_answer == str(answer):
-            print('Correct!')
-        else:
+        question, right_answer = game.return_args_wrapper()()
+        user_answer = prompt.string(question)
+
+        if right_answer != str(user_answer):
+            print(f"{user_answer} is wrong answer ;(. Correct answer was"
+                  f" {right_answer}. Let's try again, {user_name}!")
             break
+
+        print('Correct!')
+
     else:
-        print(f'Congratulations, {name}!')
+        print(f'Congratulations, {user_name}!')
         return
 
-    print(f"{answer} is wrong answer ;(. Correct answer was"
-          f" {right_answer}. Let's try again, {name}!")
+

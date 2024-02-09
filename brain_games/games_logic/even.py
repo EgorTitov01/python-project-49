@@ -3,6 +3,7 @@ from random import randint
 
 TASK = 'Answer "yes" if the number is even, otherwise answer "no".'
 
+
 def return_args_wrapper():
     def brain_even():
 

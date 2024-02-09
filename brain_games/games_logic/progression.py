@@ -3,6 +3,7 @@ from random import randint
 
 TASK = 'What number is missing in the progression?'
 
+
 def return_args_wrapper():
     def brain_progression():
 

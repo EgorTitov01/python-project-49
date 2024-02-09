@@ -25,5 +25,3 @@ def start_game(game):
     else:
         print(f'Congratulations, {user_name}!')
         return
-
-

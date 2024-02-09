@@ -3,6 +3,7 @@ from random import randint
 
 TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
+
 def return_args_wrapper():
     def brain_prime():
 

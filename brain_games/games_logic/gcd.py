@@ -3,6 +3,7 @@ from random import randint
 
 TASK = 'Find the greatest common divisor of given numbers.'
 
+
 def return_args_wrapper():
     def brain_gcd():
 

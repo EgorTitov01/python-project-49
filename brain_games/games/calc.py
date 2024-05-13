@@ -4,6 +4,7 @@ from operator import add, mul, sub
 
 TASK = 'What is the result of the expression?'
 
+
 def get_question_and_answer():
 
     operators = ['+', '*', '-']
@@ -15,6 +16,6 @@ def get_question_and_answer():
     right_answer = str(operations[oper_number](number1, number2))
 
     question = (f'Question: {str(number1)} '
-            f'{operators[oper_number]} {str(number2)}')
+                f'{operators[oper_number]} {str(number2)}')
 
     return question, right_answer

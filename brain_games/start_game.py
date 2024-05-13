@@ -12,8 +12,10 @@ def start_game(game):
 
     for _ in range(questions_count):
 
-        question, right_answer = game.return_args_wrapper()()
-        user_answer = prompt.string(question)
+        question, right_answer = game.get_question_and_answer()
+
+        print(f"Question: {question}")
+        user_answer = prompt.string("Your answer: ")
 
         if right_answer != str(user_answer):
             print(f"{user_answer} is wrong answer ;(. Correct answer was"

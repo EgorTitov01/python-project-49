@@ -15,7 +15,7 @@ def get_question_and_answer():
 
     right_answer = str(operations[oper_number](number1, number2))
 
-    question = (f'Question: {str(number1)} '
-                f'{operators[oper_number]} {str(number2)}')
+    question = (f'{(number1)} '
+                f'{operators[oper_number]} {(number2)}')
 
     return question, right_answer

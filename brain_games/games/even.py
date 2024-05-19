@@ -13,6 +13,6 @@ def get_question_and_answer():
     else:
         right_answer = 'no'
 
-    question = f'Question: {number}'
+    question = f'{number}'
 
     return question, right_answer

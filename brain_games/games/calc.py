@@ -7,7 +7,7 @@ TASK = 'What is the result of the expression?'
 
 def get_question_and_answer():
 
-    operations = [('+', add), ('*', mul), ('-,', sub)]
+    operations = [('+', add), ('*', mul), ('-', sub)]
     operator = choice(operations)
     number1 = randint(1, 20)
     number2 = randint(1, 20)
